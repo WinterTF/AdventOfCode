@@ -3,11 +3,11 @@ package main
 import (
   "fmt"
   "os"
-  "github.com/TimFWinter/AdventOfCode/2023/Day01"
+  "github.com/TimFWinter/AdventOfCode/2023/day01"
 )
 
 func main()  {
-  if len(os.args) != {
+  if len(os.Args) != 2 {
     fmt.Println("Invalid arguments")
     os.Exit(1)
   }
@@ -17,10 +17,10 @@ func main()  {
   switch puzzle{
 
   case "1.1":
-    Day1.SolvePartOne()
+    day01.SolvePartOne()
 
   default:
-    ftm.Println("Invalid puzzle selected")
+    fmt.Println("Invalid puzzle selected")
 
   }
 }
