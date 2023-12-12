@@ -3,6 +3,7 @@ package main
 import (
   "fmt"
   "os"
+  "github.com/TimFWinter/AdventOfCode/2023/Day01"
 )
 
 func main()  {
@@ -16,7 +17,7 @@ func main()  {
   switch puzzle{
 
   case "1.1":
-    solveDay1(1)
+    Day1.SolvePartOne()
 
   default:
     ftm.Println("Invalid puzzle selected")
