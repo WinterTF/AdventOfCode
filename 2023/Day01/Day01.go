@@ -1,25 +1,31 @@
 package day01
 
-import(
-  "fmt"
-  "os"
-  "io/ioutil"
+import (
+	"fmt"
+	"io/ioutil"
+	"os"
+	"strings"
 )
 
-func SolvePartOne(){
+func SolvePartOne() {
 
-  fmt.Println(ReadInput())
-  os.Exit(0)
-  
+	puzzleInput := strings.Splits(ReadInput(), `\n`)
+
+	os.Exit(0)
+
 }
 
-func ReadInput() string{
-  fileContent, error := ioutil.ReadFile("inputs/input1.txt")
+func ReadInput() string {
+	fileContent, error := ioutil.ReadFile("inputs/input1.txt")
 
-  if error != nil{
-    fmt.Println("Error reading the input file")
-    os.Exit(1)
-  }
+	if error != nil {
+		fmt.Println("Error reading the input file")
+		os.Exit(1)
+	}
 
-  return string(fileContent)
+	return string(fileContent)
+}
+
+func ExtractDigits(line string) list[string] {
+
 }

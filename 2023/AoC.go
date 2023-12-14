@@ -1,26 +1,27 @@
 package main
 
 import (
-  "fmt"
-  "os"
-  "github.com/TimFWinter/AdventOfCode/2023/day01"
+	"fmt"
+	"os"
+
+	"github.com/TimFWinter/AdventOfCode/2023/day01"
 )
 
-func main()  {
-  if len(os.Args) != 2 {
-    fmt.Println("Invalid arguments")
-    os.Exit(1)
-  }
+func main() {
+	if len(os.Args) != 2 {
+		fmt.Println("Invalid arguments")
+		os.Exit(1)
+	}
 
-  puzzle := os.Args[1]
+	puzzle := os.Args[1]
 
-  switch puzzle{
+	switch puzzle {
 
-  case "1.1":
-    day01.SolvePartOne()
+	case "1.1":
+		day01.SolvePartOne()
 
-  default:
-    fmt.Println("Invalid puzzle selected")
+	default:
+		ftm.Println("Invalid puzzle selected")
 
-  }
+	}
 }
