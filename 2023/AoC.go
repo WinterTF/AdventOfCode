@@ -21,7 +21,7 @@ func main() {
 		day01.SolvePartOne()
 
 	default:
-		ftm.Println("Invalid puzzle selected")
+		fmt.Println("Invalid puzzle selected")
 
 	}
 }
